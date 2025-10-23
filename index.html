@@ -2,158 +2,153 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Задание 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 4 — Сайт задания</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets.css">
 </head>
+
 <body>
-  <header id="header">
-    <div class="header-content">
-      <div id="logo">
-        <img src="cat2.jpg" alt="Логотип">
+  <!-- HEADER -->
+  <header class="bg-light border-bottom py-3 mb-4">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="cat2.jpg" alt="Логотип" class="me-3 rounded" style="height:70px;">
+        <h1 class="h4 m-0">Сайт задания</h1>
       </div>
-      <nav id="nav">
-        <a href="#links">Ссылки</a>
-        <a href="#table-block">Таблица</a>
-        <a href="#form-block">Форма</a>
+      <nav class="nav">
+        <a href="#links" class="nav-link px-3 text-dark">Ссылки</a>
+        <a href="#table" class="nav-link px-3 text-dark">Таблица</a>
+        <a href="#form" class="nav-link px-3 text-dark">Форма</a>
       </nav>
-      <div id="site-name">Сайт задания</div>
     </div>
   </header>
 
-  <main id="main-content">
-    <h1>Задание 3</h1>
+  <!-- MAIN -->
+  <main class="container mb-5">
+    <h1 class="text-center mb-4">Задание 4</h1>
 
-    <!-- Таблица -->
-    <section id="table-block">
-      <h2>Таблица с товарами</h2>
-      <table id="data-table">
-        <thead>
-          <tr>
-            <th>Категория</th>
-            <th>Товар</th>
-            <th>Цена</th>
-            <th>Количество</th>
-            <th>Сумма</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="2">Периферия</td>
-            <td>Мышь</td>
-            <td>1500 руб.</td>
-            <td>2 шт.</td>
-            <td>3000 руб.</td>
-          </tr>
-          <tr>
-            <td>Клавиатура</td>
-            <td>2500 руб.</td>
-            <td>1 шт.</td>
-            <td>2500 руб.</td>
-          </tr>
-          <tr>
-            <td>Мониторы</td>
-            <td>24" FullHD</td>
-            <td>15000 руб.</td>
-            <td>1 шт.</td>
-            <td>15000 руб.</td>
-          </tr>
-          <tr>
-            <td>Аудио</td>
-            <td>Наушники</td>
-            <td>3000 руб.</td>
-            <td>3 шт.</td>
-            <td>9000 руб.</td>
-          </tr>
-          <tr>
-            <td>Аксессуары</td>
-            <td>Коврик</td>
-            <td>500 руб.</td>
-            <td>5 шт.</td>
-            <td>2500 руб.</td>
-          </tr>
-          <tr>
-            <td colspan="2"><strong>ИТОГО</strong></td>
-            <td></td>
-            <td><strong>12 шт.</strong></td>
-            <td><strong>32000 руб.</strong></td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- TABLE -->
+    <section id="table" class="mb-5">
+      <h2 class="text-center mb-3">Таблица с товарами</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle text-center">
+          <thead class="table-success">
+            <tr>
+              <th>Категория</th>
+              <th>Товар</th>
+              <th>Цена</th>
+              <th>Количество</th>
+              <th>Сумма</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">Периферия</td>
+              <td>Мышь</td>
+              <td>1500 руб.</td>
+              <td>2 шт.</td>
+              <td>3000 руб.</td>
+            </tr>
+            <tr>
+              <td>Клавиатура</td>
+              <td>2500 руб.</td>
+              <td>1 шт.</td>
+              <td>2500 руб.</td>
+            </tr>
+            <tr>
+              <td>Мониторы</td>
+              <td>24" FullHD</td>
+              <td>15000 руб.</td>
+              <td>1 шт.</td>
+              <td>15000 руб.</td>
+            </tr>
+            <tr>
+              <td>Аудио</td>
+              <td>Наушники</td>
+              <td>3000 руб.</td>
+              <td>3 шт.</td>
+              <td>9000 руб.</td>
+            </tr>
+            <tr>
+              <td>Аксессуары</td>
+              <td>Коврик</td>
+              <td>500 руб.</td>
+              <td>5 шт.</td>
+              <td>2500 руб.</td>
+            </tr>
+            <tr class="fw-bold">
+              <td colspan="2">ИТОГО</td>
+              <td></td>
+              <td>12 шт.</td>
+              <td>32000 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <!-- Ссылки -->
-    <section id="links-block">
-      <h1>Список ссылок</h1>
-      <ul>
-        <li><a href="https://www.kubsu.ru/ru">Сайт КубГУ</a></li>
-        <li><a href="https://www.kubsu.ru/">Сайт КубГУ (https)</a></li>
-        <li><a href="https://www.wildberries.ru/"><img src="cat.jpg" width="736" height="736" alt="wb"></a></li>
-        <li><a href="inter.html">Внутренняя страница</a></li>
-        <li><a href="#ft">Ссылка на фрагмент</a></li>
-        <li><a href="https://www.wildberries.ru/catalog/0/search.aspx?page=1&sort=popular&search=%D0%BC%D0%B8%D0%BB%D1%8B%D0%B9+%D0%BA%D0%BE%D0%B2%D1%80%D0%B8%D0%BA&xsubject=742">Ссылка с 3 параметрами</a></li>
-        <li><a href="index.html?id=0193122">Ссылка с параметром id</a></li>
-        <li><a href="inter.html">Относительная ссылка (текущий каталог)</a></li>
-        <li><a href="about/index.html">Относительная (каталог about)</a></li>
-        <li><a href="about/index.html">Относительная (уровнем выше)</a></li>
-        <li><a href="about/index.html">Относительная (2 уровня выше)</a></li>
-        <li>
-          <p>Контекстная ссылка: Wildberries — российский <a href="https://ru.wikipedia.org/wiki/Маркетплейс">маркетплейс</a>,
-          основан в 2004 году <a href="https://ru.wikipedia.org/wiki/Бакальчук,_Владислав_Сергеевич">В.Бакальчук</a> и
-          <a href="https://ru.wikipedia.org/wiki/Ким,_Татьяна_Владимировна">Т.Бакальчук</a>.</p>
+    <!-- LINKS -->
+    <section id="links" class="mb-5">
+      <h2 class="text-center mb-3">Список ссылок</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="https://www.kubsu.ru/ru">Сайт КубГУ</a></li>
+        <li class="list-group-item"><a href="https://www.kubsu.ru/">Сайт КубГУ (https)</a></li>
+        <li class="list-group-item"><a href="https://www.wildberries.ru/"><img src="cat.jpg" class="img-fluid" alt="cat"></a></li>
+        <li class="list-group-item"><a href="inter.html">Внутренняя страница</a></li>
+        <li class="list-group-item"><a href="#ft">Ссылка на фрагмент</a></li>
+        <li class="list-group-item"><a href="https://www.wildberries.ru/catalog/0/search.aspx?page=1&sort=popular&search=коврик">Ссылка с параметрами</a></li>
+        <li class="list-group-item"><a href="index.html?id=0193122">Ссылка с параметром id</a></li>
+        <li class="list-group-item">
+          Контекстная ссылка: Wildberries — российский 
+          <a href="https://ru.wikipedia.org/wiki/Маркетплейс">маркетплейс</a>.
         </li>
-        <li><a href="https://ru.wikipedia.org/wiki/Wildberries#:~:text=Wildberries">Ссылка на выделенный фрагмент</a></li>
-        <li>
-          <img src="circle.png" width="1000" height="666" usemap="#map" alt="фигуры">
+        <li class="list-group-item">
+          <img src="circle.png" class="img-fluid" usemap="#map" alt="фигуры">
           <map name="map">
-            <area shape="rect" coords="65,155,445,500" href="https://www.wildberries.ru/catalog/58062711/detail.aspx" alt="прямоугольник">
-            <area shape="circle" coords="770,335,165" href="https://www.wildberries.ru/catalog/364763637/detail.aspx" alt="круг">
+            <area shape="rect" alt="прямоугольник" coords="65,155,445,500" href="https://www.wildberries.ru/catalog/58062711/detail.aspx">
+            <area shape="circle" alt="круг" coords="770,335,165" href="https://www.wildberries.ru/catalog/364763637/detail.aspx">
           </map>
         </li>
-        <li><a href="">Ссылка с пустым href</a></li>
-        <li><a>Ссылка без href</a></li>
-        <li><a href="/s0195855.github.io/index.html" rel="nofollow">nofollow ссылка</a></li>
-        <li><!--noindex--><a href="/s0195855.github.io/index.html" rel="nofollow">Не индексировать</a><!--/noindex--></li>
-        <li>
-          Нумерованный список товаров
-          <ol>
-            <li><a href="https://www.wildberries.ru/catalog/155604983/detail.aspx">Мышь</a></li>
-            <li><a href="https://www.wildberries.ru/catalog/394514553/detail.aspx">Колесо для хомяка</a></li>
-            <li><a href="https://www.wildberries.ru/catalog/312024771/detail.aspx">Антистресс игрушка</a></li>
-            <li><a href="https://www.wildberries.ru/catalog/297621447/detail.aspx">Таба лапка</a></li>
-          </ol>
-        </li>
-        <li><a href="ftp://user:password@ftp.server.com/file.txt">FTP с авторизацией</a></li>
       </ul>
     </section>
 
-    <!-- Форма -->
-    <section id="form-block">
-      <h1>Оформление заказа</h1>
-      <form action="/" method="POST">
-        <label>Фамилия имя отчество:<br>
-          <input name="LNF" value="ФИО">
-        </label><br><br>
+    <!-- FORM -->
+    <section id="form" class="mb-5">
+      <h2 class="text-center mb-3">Оформление заказа</h2>
+      <form action="/" method="POST" class="p-4 border rounded bg-white shadow-sm">
+        <div class="mb-3">
+          <label for="fio" class="form-label">Фамилия Имя Отчество</label>
+          <input name="LNF" id="fio" value="ФИО" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="tel" class="form-label">Номер телефона</label>
+          <input name="tellephone" id="tel" type="tel" class="form-control" placeholder="+7">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Электронная почта</label>
+          <input name="email" id="email" type="email" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Дата рождения</label>
+          <input name="date" id="date" type="date" class="form-control">
+        </div>
 
-        <div id="ft"></div>
-        <label>Телефон:<br>
-          <input name="telephone" type="tel" placeholder="+7">
-        </label><br><br>
+        <div class="mb-3">
+          <label class="form-label d-block">Пол:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="human" id="male" value="Male" checked>
+            <label class="form-check-label" for="male">Мужчина</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="human" id="female" value="Female">
+            <label class="form-check-label" for="female">Женщина</label>
+          </div>
+        </div>
 
-        <label>Email:<br>
-          <input name="email" type="email">
-        </label><br><br>
-
-        <label>Дата рождения:<br>
-          <input name="date" type="date">
-        </label><br><br>
-
-        Пол:<br>
-        <label><input type="radio" name="human" value="Male" checked> Мужчина</label>
-        <label><input type="radio" name="human" value="Female"> Женщина</label><br><br>
-
-        <label>Любимый язык программирования:<br>
-          <select name="pr" multiple>
+        <div class="mb-3">
+          <label class="form-label">Любимый язык программирования:</label>
+          <select name="pr" multiple class="form-select">
             <option selected>Pascal</option>
             <option>C</option>
             <option>C++</option>
@@ -166,21 +161,28 @@
             <option>Prolog</option>
             <option>Scala</option>
           </select>
-        </label><br><br>
+        </div>
 
-        <label>О себе:<br>
-          <textarea name="Biography"></textarea>
-        </label><br><br>
+        <div class="mb-3">
+          <label for="bio" class="form-label">Расскажите о себе</label>
+          <textarea name="Biography" id="bio" class="form-control" rows="3"></textarea>
+        </div>
 
-        <label><input type="checkbox" name="contract" checked> С условиями ознакомлен(а)</label><br><br>
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="contract" name="contract" checked>
+          <label class="form-check-label" for="contract">С условиями ознакомлен(а)</label>
+        </div>
 
-        <input type="submit" value="Сохранить">
+        <button type="submit" class="btn btn-success w-100">Сохранить</button>
       </form>
     </section>
   </main>
 
-  <footer id="footer">
-    <p>(c) Рыбалко Евгения</p>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="m-0">(c) Рыбалко Евгения</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
