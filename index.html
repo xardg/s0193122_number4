@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 3</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+  <header id="header">
+    <div class="header-content">
+      <div id="logo">
+        <img src="cat2.jpg" alt="Логотип">
+      </div>
+      <nav id="nav">
+        <a href="#links">Ссылки</a>
+        <a href="#table-block">Таблица</a>
+        <a href="#form-block">Форма</a>
+      </nav>
+      <div id="site-name">Сайт задания</div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <h1>Задание 3</h1>
+
+    <!-- Таблица -->
+    <section id="table-block">
+      <h2>Таблица с товарами</h2>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Категория</th>
+            <th>Товар</th>
+            <th>Цена</th>
+            <th>Количество</th>
+            <th>Сумма</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Периферия</td>
+            <td>Мышь</td>
+            <td>1500 руб.</td>
+            <td>2 шт.</td>
+            <td>3000 руб.</td>
+          </tr>
+          <tr>
+            <td>Клавиатура</td>
+            <td>2500 руб.</td>
+            <td>1 шт.</td>
+            <td>2500 руб.</td>
+          </tr>
+          <tr>
+            <td>Мониторы</td>
+            <td>24" FullHD</td>
+            <td>15000 руб.</td>
+            <td>1 шт.</td>
+            <td>15000 руб.</td>
+          </tr>
+          <tr>
+            <td>Аудио</td>
+            <td>Наушники</td>
+            <td>3000 руб.</td>
+            <td>3 шт.</td>
+            <td>9000 руб.</td>
+          </tr>
+          <tr>
+            <td>Аксессуары</td>
+            <td>Коврик</td>
+            <td>500 руб.</td>
+            <td>5 шт.</td>
+            <td>2500 руб.</td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>ИТОГО</strong></td>
+            <td></td>
+            <td><strong>12 шт.</strong></td>
+            <td><strong>32000 руб.</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Ссылки -->
+    <section id="links-block">
+      <h1>Список ссылок</h1>
+      <ul>
+        <li><a href="https://www.kubsu.ru/ru">Сайт КубГУ</a></li>
+        <li><a href="https://www.kubsu.ru/">Сайт КубГУ (https)</a></li>
+        <li><a href="https://www.wildberries.ru/"><img src="cat.jpg" width="736" height="736" alt="wb"></a></li>
+        <li><a href="inter.html">Внутренняя страница</a></li>
+        <li><a href="#ft">Ссылка на фрагмент</a></li>
+        <li><a href="https://www.wildberries.ru/catalog/0/search.aspx?page=1&sort=popular&search=%D0%BC%D0%B8%D0%BB%D1%8B%D0%B9+%D0%BA%D0%BE%D0%B2%D1%80%D0%B8%D0%BA&xsubject=742">Ссылка с 3 параметрами</a></li>
+        <li><a href="index.html?id=0193122">Ссылка с параметром id</a></li>
+        <li><a href="inter.html">Относительная ссылка (текущий каталог)</a></li>
+        <li><a href="about/index.html">Относительная (каталог about)</a></li>
+        <li><a href="about/index.html">Относительная (уровнем выше)</a></li>
+        <li><a href="about/index.html">Относительная (2 уровня выше)</a></li>
+        <li>
+          <p>Контекстная ссылка: Wildberries — российский <a href="https://ru.wikipedia.org/wiki/Маркетплейс">маркетплейс</a>,
+          основан в 2004 году <a href="https://ru.wikipedia.org/wiki/Бакальчук,_Владислав_Сергеевич">В.Бакальчук</a> и
+          <a href="https://ru.wikipedia.org/wiki/Ким,_Татьяна_Владимировна">Т.Бакальчук</a>.</p>
+        </li>
+        <li><a href="https://ru.wikipedia.org/wiki/Wildberries#:~:text=Wildberries">Ссылка на выделенный фрагмент</a></li>
+        <li>
+          <img src="circle.png" width="1000" height="666" usemap="#map" alt="фигуры">
+          <map name="map">
+            <area shape="rect" coords="65,155,445,500" href="https://www.wildberries.ru/catalog/58062711/detail.aspx" alt="прямоугольник">
+            <area shape="circle" coords="770,335,165" href="https://www.wildberries.ru/catalog/364763637/detail.aspx" alt="круг">
+          </map>
+        </li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="/s0195855.github.io/index.html" rel="nofollow">nofollow ссылка</a></li>
+        <li><!--noindex--><a href="/s0195855.github.io/index.html" rel="nofollow">Не индексировать</a><!--/noindex--></li>
+        <li>
+          Нумерованный список товаров
+          <ol>
+            <li><a href="https://www.wildberries.ru/catalog/155604983/detail.aspx">Мышь</a></li>
+            <li><a href="https://www.wildberries.ru/catalog/394514553/detail.aspx">Колесо для хомяка</a></li>
+            <li><a href="https://www.wildberries.ru/catalog/312024771/detail.aspx">Антистресс игрушка</a></li>
+            <li><a href="https://www.wildberries.ru/catalog/297621447/detail.aspx">Таба лапка</a></li>
+          </ol>
+        </li>
+        <li><a href="ftp://user:password@ftp.server.com/file.txt">FTP с авторизацией</a></li>
+      </ul>
+    </section>
+
+    <!-- Форма -->
+    <section id="form-block">
+      <h1>Оформление заказа</h1>
+      <form action="/" method="POST">
+        <label>Фамилия имя отчество:<br>
+          <input name="LNF" value="ФИО">
+        </label><br><br>
+
+        <div id="ft"></div>
+        <label>Телефон:<br>
+          <input name="telephone" type="tel" placeholder="+7">
+        </label><br><br>
+
+        <label>Email:<br>
+          <input name="email" type="email">
+        </label><br><br>
+
+        <label>Дата рождения:<br>
+          <input name="date" type="date">
+        </label><br><br>
+
+        Пол:<br>
+        <label><input type="radio" name="human" value="Male" checked> Мужчина</label>
+        <label><input type="radio" name="human" value="Female"> Женщина</label><br><br>
+
+        <label>Любимый язык программирования:<br>
+          <select name="pr" multiple>
+            <option selected>Pascal</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>JavaScript</option>
+            <option>PHP</option>
+            <option>Python</option>
+            <option>Java</option>
+            <option>Haskell</option>
+            <option>Clojure</option>
+            <option>Prolog</option>
+            <option>Scala</option>
+          </select>
+        </label><br><br>
+
+        <label>О себе:<br>
+          <textarea name="Biography"></textarea>
+        </label><br><br>
+
+        <label><input type="checkbox" name="contract" checked> С условиями ознакомлен(а)</label><br><br>
+
+        <input type="submit" value="Сохранить">
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>(c) Рыбалко Евгения</p>
+  </footer>
+</body>
+</html>
