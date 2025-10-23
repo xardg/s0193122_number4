@@ -1,133 +1,119 @@
 /* ====== ОБЩИЕ СТИЛИ (Mobile First) ====== */
 body {
-  background: #edeed5;
+  background-color: #edeed5;
+  font-family: "Arial", sans-serif;
+  color: #333;
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-header, nav, main, footer {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
 }
 
 /* ---------- HEADER ---------- */
 header {
-  background: #d6e2f5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background-color: #d6e2f5;
+  border-bottom: 2px solid #b3cde0;
 }
 
 #logo img {
-  width: 60px;
+  width: 70px;
   height: auto;
   border-radius: 50%;
+  border: 2px solid #b3cde0;
 }
 
 #site-name {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 10px;
+  font-weight: 700;
+  color: #1d3557;
 }
 
-/* ---------- NAVIGATION ---------- */
-nav {
-  background: #b3cde0;
-  display: flex;
-  flex-direction: column; /* мобилка — вертикально */
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
+/* ---------- НАВИГАЦИЯ ---------- */
+.nav a {
+  color: #1a1a1a !important;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-nav a {
-  text-decoration: none;
-  color: #000;
-  background: #e6f0ff;
-  padding: 5px 15px;
-  border-radius: 5px;
-  transition: background 0.3s;
+.nav a:hover {
+  background-color: #cce0ff;
 }
 
-nav a:hover {
-  background: #cce0ff;
-}
-
-/* ---------- MAIN ---------- */
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 10px;
-}
-
-/* порядок блоков на мобильном */
-#table-block { order: 1; }
-#links-block { order: 2; }
-#form-block { order: 3; }
-
+/* ---------- ТАБЛИЦЫ ---------- */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #fff;
-}
-
-th, td {
-  border: 1px solid #000;
-  padding: 5px;
-  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 th {
-  background: #EACDD2;
+  background-color: #EACDD2 !important;
 }
 
 tr:nth-child(even) {
-  background: #EACDD2;
+  background-color: #f6f6f6;
 }
-tr:nth-child(odd) {
-  background: #fff;
+
+/* ---------- ФОРМЫ ---------- */
+form {
+  background-color: #ffffff;
+}
+
+form label {
+  font-weight: 500;
+}
+
+input, textarea, select {
+  font-size: 1rem;
+}
+
+button, input[type="submit"] {
+  transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  opacity: 0.9;
 }
 
 /* ---------- FOOTER ---------- */
 footer {
-  background: #333;
+  background-color: #333;
   color: #fff;
   text-align: center;
-  margin-top: 15px;
-  padding: 10px;
+  padding: 12px 0;
   font-size: 14px;
 }
 
-/* ====== MEDIA QUERY для планшетов/ПК ====== */
-@media (min-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
+/* ---------- ИЗОБРАЖЕНИЯ ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
+/* ====== MEDIA QUERY для планшетов и ПК ====== */
+@media (min-width: 768px) {
   #site-name {
-    margin: 0 20px;
     font-size: 26px;
   }
 
-  nav {
-    flex-direction: row; /* горизонтальное меню */
-    justify-content: flex-end;
+  .nav a {
+    padding: 6px 16px;
   }
 
-  main {
-    max-width: 960px;
+  form {
+    max-width: 700px;
     margin: 0 auto;
   }
 
-  /* сброс порядка */
-  #table-block, #links-block, #form-block { order: 0; }
+  table {
+    font-size: 1rem;
+  }
+}
+
+/* ====== MEDIA QUERY для больших экранов ====== */
+@media (min-width: 1200px) {
+  main {
+    max-width: 960px;
+  }
 }
